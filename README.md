@@ -1,16 +1,16 @@
 # Celcuotas
 
-## Introduccion
+## Introducción
 
-Celcuotas es un front que simula la venta del catalogo de celcuotas, <br/>
-se hizo como proyecto de semestre para la materia de diseño web avanzado, <br/>
-la idea era crear un front atractivo he intuitivo.
+Este proyecto es un CLI de terminal el cual sirve para <br/>
+Poder pasar imágenes de un formato a otro, <br/>
+Tal como pasar de .png a .webp
 
 ## Tecnologías utilizadas
 
-- React
-- Tailwind
+- NodeJs
 - Typescript
+- ViTest
 
 ## Instalación
 
@@ -19,20 +19,20 @@ Para poner instalar y ejecutar el proyecto hay que seguir los siguientes pasos
 - Clonar el repositorio
 
 ```sh
-$ git clone https://github.com/Ye1der/Routine-Editor.git
+$ git clone https://github.com/Ye1der/convertImage.git
 ```
 
-- Ubicarse en la raíz del respositorio y ejecutar los siguientes comandos
+- Ubicarse en la raíz del repositorio y ejecutar los siguientes comandos
 
 ```sh
 $ npm install
 ```
 
 ```sh
-$ npm run dev
+$ npm start
 ```
 
-## Colaboracion
+## Colaboración
 
 Si quisieras colaborar en el proyecto lo puedes hacer de la siguiente forma
 
@@ -44,4 +44,4 @@ $ git switch -c nombre-de-la-rama
 ```
 
 - Luego de eso puedes hacer tus commits con los cambios que quieras hacer
-- Abrir una pull request para poder fucionar tus cambios con la rama principal
+- Abrir una pull request para poder fusionar tus cambios con la rama principal
