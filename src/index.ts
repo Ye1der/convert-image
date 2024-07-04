@@ -1,5 +1,5 @@
-import { folder } from './folder'
-import { files } from './files'
+import { folder } from './folder.js'
+import { files } from './files.js'
 import inquirer from 'inquirer'
 
 console.log('')

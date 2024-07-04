@@ -1,10 +1,11 @@
 import inquirer from 'inquirer'
-import { loopInput } from './utils'
+import { loopInput } from './utils.js'
 import fs from 'node:fs/promises'
-import { Format, formats } from './constants'
-import chalk from '../node_modules/chalk/source/index'
+import { Format, formats } from './constants.js'
+import chalk from 'chalk'
 import path from 'node:path'
-import { convertImage } from './convertImage'
+import { convertImage } from './convertImage.js'
+import ora from 'ora'
 
 export async function files() {
   let loop = true
@@ -75,10 +76,20 @@ export async function files() {
 
   if (verification.verify) {
     for (const image of imagesToConvert) {
-      await convertImage({
-        url: image.url,
-        format: image.format as Format
-      })
+      const loader = ora('Convirtiendo imagen...')
+      loader.color = 'yellow'
+      loader.start()
+
+      try {
+        const result = await convertImage({
+          url: image.url,
+          format: image.format as Format
+        })
+
+        loader.succeed(result)
+      } catch (error) {
+        loader.fail(error as string)
+      }
     }
   } else {
     console.log(chalk.bold.magenta('\n• Ninguna imagen se convirtió\n'))

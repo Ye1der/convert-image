@@ -1,4 +1,4 @@
-import chalk from '../node_modules/chalk/source/index'
+import chalk from 'chalk'
 
 export async function loopInput(block: () => Promise<any>) {
   let loop = true
