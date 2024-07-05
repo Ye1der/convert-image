@@ -36,7 +36,7 @@ maquina puedes instalarlo y ejecutarlos siguiendo estos pasos
 - Clonar el repositorio
 
 ```sh
-$ git clone https://github.com/Ye1der/convertImage.git
+$ git clone https://github.com/Ye1der/convert-image.git
 ```
 
 - Ubicarse en la raíz del repositorio y ejecutar los siguientes comandos
