@@ -1,9 +1,9 @@
 {
-  "name": "convert-image",
-  "version": "1.0.0",
+  "name": "convert-image-yei",
+  "version": "1.0.1",
   "description": "CLI for change format to your images",
   "bin": {
-    "convert-image": "./dist/index.js"
+    "convertimg": "./dist/index.js"
   },
   "main": "./dist/index.js",
   "type": "module",

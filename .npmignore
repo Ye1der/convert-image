@@ -1,5 +1,7 @@
 .vscode
+.prettierrc
+.prettierignore
 dist
 node_modules
 public
-tests
+src/tests

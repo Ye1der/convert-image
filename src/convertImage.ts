@@ -1,7 +1,6 @@
 import path from 'path'
 import sharp from 'sharp'
 import { Format, formats } from './constants.js'
-import ora from 'ora'
 
 interface Params {
   url: string

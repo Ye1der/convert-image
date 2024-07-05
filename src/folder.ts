@@ -1,5 +1,5 @@
 import fs from 'node:fs/promises'
-import { Format, formats } from './constants.js'
+import { formats } from './constants.js'
 import path from 'node:path'
 import { convertImage } from './convertImage.js'
 import { loopInput } from './utils.js'
@@ -93,9 +93,9 @@ export async function folder() {
           format: format.type
         })
 
-        loader.succeed(result)
+        loader.succeed(chalk.bold.green(result))
       } catch (error) {
-        loader.fail(error as string)
+        loader.fail(chalk.bold.red(error))
       }
     }
   } else {

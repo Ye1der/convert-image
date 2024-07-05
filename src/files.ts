@@ -86,9 +86,9 @@ export async function files() {
           format: image.format as Format
         })
 
-        loader.succeed(result)
+        loader.succeed(chalk.bold.green(result))
       } catch (error) {
-        loader.fail(error as string)
+        loader.fail(chalk.bold.red(error))
       }
     }
   } else {
