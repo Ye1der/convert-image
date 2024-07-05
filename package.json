@@ -1,16 +1,21 @@
 {
-  "name": "convertimg",
-  "version": "0.0.1",
-  "description": "Change format to your images",
-  "main": "index.js",
+  "name": "convert-image",
+  "version": "1.0.0",
+  "description": "CLI for change format to your images",
+  "bin": {
+    "convert-image": "./dist/index.js"
+  },
+  "main": "./dist/index.js",
   "type": "module",
   "scripts": {
     "test": "vitest",
-    "dev": "node --watch src/index.ts",
-    "start": "bun src/index.ts"
+    "dev": "bun src/index.ts",
+    "start": "node ./dist/index.js",
+    "build": "tsc"
   },
   "author": "Yeider",
-  "license": "ISC",
+  "license": "MIT",
+  "keywords": ["cli", "convert", "image"],
   "dependencies": {
     "@types/chalk": "^2.2.0",
     "@types/inquirer": "^9.0.7",
